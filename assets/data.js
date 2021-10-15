@@ -23,4 +23,31 @@ export const experiences = [
         company: 'PT. Wawasan Lintas Nusantara',
         date: 'Apr 2019 - Dec 2019'
     }
-]
+];
+
+export const educations = [
+    {
+        id: 4,
+        name: 'STMIK Nusa Mandiri',
+        major: 'Information System',
+        date: '2019 - 2020'
+    },
+    {
+        id: 3,
+        name: 'Univ. BSI',
+        major: 'Information Management',
+        date: '2016 - 2019'
+    },
+    {
+        id: 2,
+        name: 'SMKN 53 Jakarta',
+        major: 'T. Audio Video',
+        date: '2013 - 2016'
+    },
+    {
+        id: 1,
+        name: 'SMPN 187 Jakarta',
+        major: '',
+        date: '2010 - 2013'
+    },
+];
