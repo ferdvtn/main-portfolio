@@ -14,6 +14,5 @@
 </template>
 
 <script>
-AOS.init();
 export default {}
 </script>
