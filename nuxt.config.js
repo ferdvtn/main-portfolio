@@ -5,7 +5,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'main-portfolio',
+    title: 'Ahmad Ferdian',
     htmlAttrs: {
       lang: 'en'
     },
