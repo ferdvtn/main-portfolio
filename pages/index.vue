@@ -2,15 +2,15 @@
   <div class="relative md:container mx-auto flex flex-col space-y-32">
       <Switcher />
 
-      <div id="hero" class="relative p-4 flex justify-center items-center h-64 md:space-x-8">
-        <img src="~/assets/img/user.png" alt="user" class="w-64 h-auto bg-gradient-to-r from-purple-600 to-blue-600 shadow-xl rounded-full absolute -left-24 md:relative md:left-0">
-        <div class="z-10 absolute right-3 md:relative md:right-0">
+      <div id="hero" class="relative p-4 flex justify-center items-center h-64 sm:space-x-8">
+        <img src="~/assets/img/user.png" alt="user" class="w-64 h-auto absolute -left-24 sm:relative sm:left-0 bg-gradient-to-r from-purple-600 to-blue-600 shadow-xl rounded-full">
+        <div class="z-10 absolute right-3 sm:relative sm:right-0">
           <h1 class="text-4xl font-bold antialiased">Ahmad Ferdian</h1>
           <p data-aos="fade-right">Web Developer</p>
 
           <div class="mt-5 flex space-x-2 justify-start text-center">
-            <a href="/pdf/ahmad-ferdian-cv.pdf" target="_blank" class="py-2 px-4 bg-red-300 text-gray-700 font-semibold antialiased rounded">Download CV</a>
-            <button @click="scrollToId('experiences')" class="py-2 px-4 bg-green-300 text-gray-700 font-semibold antialiased rounded">Experiences</button>
+            <a href="/pdf/ahmad-ferdian-cv.pdf" target="_blank" class="py-2 px-4 bg-red-300 text-gray-700 font-semibold antialiased rounded transition-opacity duration-100 hover:opacity-80">Download CV</a>
+            <button @click="scrollToId('experiences')" class="py-2 px-4 bg-green-300 text-gray-700 font-semibold antialiased rounded transition-opacity duration-100 hover:opacity-80">Experiences</button>
           </div>
         </div>
       </div>
@@ -23,15 +23,15 @@
         <p class="mb-16 text-sm text-center leading-relaxed max-w-md">Hello, I'm Ferdian. My current job as an IT web developer at <i><strong>Tira Satria Niaga</strong></i> company in Jakarta area. Information systems graduate student in 2020 with GPA of 3.6 of 4.0.<br>In my self, Honesty is the principle during work</p>
 
         <div class="flex justify-center items-center space-x-2 text-gray-100">
-          <button @click="scrollToId('educations')" class="py-2 px-4 rounded bg-gradient-to-r from-pink-600 to-indigo-600">Educations</button>
-          <a href="https://www.linkedin.com/in/ahmadferdian/" target="_blank" class="py-2 px-4 rounded bg-blue-900 tracking-wider">Linkedin</a>
+          <button @click="scrollToId('educations')" class="py-2 px-4 rounded bg-gradient-to-r from-pink-600 to-indigo-600 transition-opacity duration-100 hover:opacity-80">Educations</button>
+          <a href="https://www.linkedin.com/in/ahmadferdian/" target="_blank" class="py-2 px-4 rounded bg-blue-900 tracking-wider transition-opacity duration-100 hover:opacity-80">Linkedin</a>
         </div>
-        <button @click="scrollToId('contact')" class="mt-2 py-2 px-4 text-gray-100 rounded bg-gradient-to-r from-purple-600 to-pink-600">Let's Connected</button>
+        <button @click="scrollToId('contact')" class="mt-2 py-2 px-4 text-gray-100 rounded bg-gradient-to-r from-purple-600 to-pink-600 transition-opacity duration-100 hover:opacity-80">Let's Connected</button>
       </div>
 
       <!-- experiences & educations -->
-      <div class="flex flex-col space-y-32 p-4 md:space-y-0 justify-evenly items-start md:flex-row">
-        <div id="experiences" class="w-full flex flex-col justify-start items-start md:items-center">
+      <div class="flex flex-col space-y-32 p-4 sm:space-y-0 justify-evenly items-start sm:flex-row">
+        <div id="experiences" class="w-full flex flex-col justify-start items-start sm:items-center">
           <div class="w-full flex flex-col items-center">
             <h1 class="font-semibold antialiased text-xl text-center">Experiences</h1>
             <DividerX class="mt-3 mb-8" />
@@ -45,7 +45,7 @@
             </li>
           </ul>
         </div>
-        <div id="educations" class="w-full flex flex-col justify-start items-start md:items-center">
+        <div id="educations" class="w-full flex flex-col justify-start items-start sm:items-center">
           <div class="w-full flex flex-col items-center">
             <h1 class="font-semibold antialiased text-xl text-center">Educations</h1>
             <DividerX class="mt-3 mb-8" />
@@ -70,7 +70,7 @@
             <a :href="`${i.url}`" target="_blank" class="rounded block transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 focus:ring-offset-blue-300 transition duration-100">
               <img 
                 :src="require(`~/assets/img/tools/${i.id}.png`)" :alt="`${i.id}.png`"
-                class="w-16 h-auto md:w-32"
+                class="h-auto w-16 sm:w-24 md:w-32"
               >
             </a>
           </li>
@@ -78,12 +78,12 @@
       </div>
 
       <!-- projects -->
-      <div id="projects" class="flex flex-col justify-start items-center md:items-start">
+      <div id="projects" class="flex flex-col justify-start items-center sm:items-start px-0 sm:px-5 md:px-0">
         <h1 class="font-semibold antialiased text-lg">Personal projects</h1>
         <DividerX class="mt-3 mb-8" />
-        <ul class="flex flex-col justify-start items-center w-full md:-m-3 space-y-5 md:flex-wrap md:flex-row md:space-y-0">
-          <li v-for="project in projects" :key="project.id" class="w-full md:w-1/3">
-            <div class="relative group overflow-hidden md:m-3 transform bg-gradient-to-r from-pink-600 to-purple-600 md:rounded-xl">
+        <ul class="flex flex-col justify-start items-center w-full sm:-m-3 space-y-5 sm:flex-wrap sm:flex-row sm:space-y-0">
+          <li v-for="project in projects" :key="project.id" class="w-full sm:w-1/2 md:w-1/3">
+            <div class="relative group overflow-hidden sm:m-3 transform sm:rounded-xl bg-gradient-to-r from-pink-600 to-purple-600">
               <a :href="project.url" target="_blank" class="block">
                 <img 
                   :src="require(`~/assets/img/projects/${project.id}.png`)" :alt="`${project.id}.png`"
