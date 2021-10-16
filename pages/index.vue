@@ -96,7 +96,7 @@
       <!-- contact -->
       <div id="contact" class="px-5">
         <h1 class="font-semibold antialiased text-lg">Let's connected</h1>
-        <DividerX class="mt-3 mb-5" />
+        <DividerX class="mt-3 mb-8" />
         <ul class="flex flex-col space-y-2">
           <li class="flex items-center space-x-3">
             <div>
