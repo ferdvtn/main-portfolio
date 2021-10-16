@@ -1,5 +1,5 @@
 <template>
-  <div class="relative md:container mx-auto py-10 flex flex-col space-y-32">
+  <div class="relative md:container mx-auto flex flex-col space-y-32">
       <Switcher />
 
       <div id="hero" class="relative p-4 flex justify-center items-center h-64 md:space-x-8">
