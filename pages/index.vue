@@ -99,7 +99,7 @@
       </div>
 
       <!-- contact -->
-      <div id="contact" class="px-5">
+      <div id="contact" class="px-5 md:px-0">
         <h1 class="font-semibold antialiased text-lg">Let's connected</h1>
         <DividerX class="mt-3 mb-8" />
         <ul class="flex flex-col space-y-2">
