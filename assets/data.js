@@ -51,3 +51,42 @@ export const educations = [
         date: '2010 - 2013'
     },
 ];
+
+export const tools = [
+    {
+        id: 1,
+        url: 'https://codeigniter.com/'
+    },
+    {
+        id: 2,
+        url: 'https://laravel.com/'
+    },
+    {
+        id: 3,
+        url: 'https://jquery.com/'
+    },
+    {
+        id: 4,
+        url: 'https://vuejs.org/'
+    },
+    {
+        id: 5,
+        url: 'https://nuxtjs.org/'
+    },
+    {
+        id: 6,
+        url: 'https://getbootstrap.com/'
+    },
+    {
+        id: 7,
+        url: 'https://tailwindcss.com/'
+    },
+    {
+        id: 8,
+        url: 'https://git-scm.com/'
+    },
+    {
+        id: 9,
+        url: 'https://subversion.apache.org/'
+    },
+]

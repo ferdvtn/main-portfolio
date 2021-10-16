@@ -8,7 +8,7 @@
 
           <div class="mt-5 flex space-x-2 justify-start text-center">
             <a href="/pdf/ahmad-ferdian-cv.pdf" target="_blank" class="py-2 px-4 bg-red-300 text-gray-700 font-semibold antialiased rounded">Download CV</a>
-            <button @click="scrollToId('experiences')" class="flex-1 py-2 px-4 bg-green-300 text-gray-700 font-semibold antialiased rounded">Experiences</button>
+            <button @click="scrollToId('experiences')" class="py-2 px-4 bg-green-300 text-gray-700 font-semibold antialiased rounded">Experiences</button>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@
           <button @click="scrollToId('educations')" class="py-2 px-4 rounded bg-gradient-to-r from-pink-600 to-indigo-600">Educations</button>
           <a href="https://www.linkedin.com/in/ahmadferdian/" target="_blank" class="py-2 px-4 rounded bg-blue-900 tracking-wider">Linkedin</a>
         </div>
-        <button @click="scrollToId('contact')" class="mt-2 py-2 px-4 rounded bg-gradient-to-r from-purple-600 via-pink-600 to-red-500">Let's Connected</button>
+        <button @click="scrollToId('contact')" class="mt-2 py-2 px-4 rounded bg-gradient-to-r from-purple-600 to-pink-600">Let's Connected</button>
       </div>
 
       <!-- experiences & educations -->
@@ -35,7 +35,7 @@
             <DividerX class="mt-3 mb-8" />
           </div>
           <ul class="pl-4 border-l-2 border-purple-600 flex flex-col items-start space-y-5">
-            <li v-for="expr in experiences" :key="expr.id" class="py-3 px-6 relative bg-gradient-to-r from-purple-500 to-blue-500 inline-block rounded-lg">
+            <li v-for="expr in experiences" :key="expr.id" class="py-3 px-6 relative bg-gradient-to-r from-purple-600 to-blue-500 inline-block rounded-lg">
               <div class="w-4 h-4 bg-purple-600 rounded-full absolute -left-6 top-10"></div>
               <h2 class="font-semibold antialiased">{{ expr.title }}</h2>
               <p class="text-sm">{{ expr.company }}</p>
@@ -49,7 +49,7 @@
             <DividerX class="mt-3 mb-8" />
           </div>
           <ul class="pl-4 border-l-2 border-purple-600 flex flex-col items-start space-y-5">
-            <li v-for="educ in educations" :key="educ.id" class="py-3 px-6 relative bg-gradient-to-r from-purple-500 to-blue-500 inline-block rounded-lg">
+            <li v-for="educ in educations" :key="educ.id" class="py-3 px-6 relative bg-gradient-to-r from-purple-600 to-blue-500 inline-block rounded-lg">
               <div class="w-4 h-4 bg-purple-600 rounded-full absolute -left-6 top-10"></div>
               <h2 class="font-semibold antialiased">{{ educ.name }}</h2>
               <p class="text-sm">{{ educ.major }}</p>
@@ -57,6 +57,22 @@
             </li>
           </ul>
         </div>
+      </div>
+
+      <!-- Tools -->
+      <div id="tools" class="flex flex-col justify-center items-center px-5 py-10 bg-gradient-to-t md:bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 md:rounded-xl">
+        <h1 class="font-semibold antialiased text-lg">Tools</h1>
+        <DividerX class="mt-3 mb-5" />
+        <ul class="w-full flex flex-wrap justify-center items-center">
+          <li v-for="i in tools" :key="i.id" class="m-5">
+            <a :href="`${i.url}`" target="_blank" class="rounded block transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 focus:ring-offset-blue-300 transition duration-100">
+              <img 
+                :src="require(`~/assets/img/tools/${i.id}.png`)" :alt="`${i.id}.png`"
+                class="w-16 h-auto md:w-32"
+              >
+            </a>
+          </li>
+        </ul>
       </div>
 
       <!-- contact -->
@@ -89,19 +105,24 @@
 </template>
 
 <script>
-import { experiences, educations } from '~/assets/data.js';
+import { experiences, educations, tools } from '~/assets/data.js';
 
 export default {
   data() {
     return {
       experiences: experiences,
-      educations: educations
+      educations: educations,
+      tools: tools
     }
   },
   methods: {
     scrollToId(id) {
       const target = document.querySelector(`#${id}`);
-      target.scrollIntoView({ behavior: 'smooth' });
+      window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: target.offsetTop
+      });
     }
   }
 }
