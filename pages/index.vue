@@ -1,5 +1,7 @@
 <template>
-  <div class="md:container mx-auto py-10 flex flex-col space-y-32">
+  <div class="relative md:container mx-auto py-10 flex flex-col space-y-32">
+      <Switcher />
+
       <div id="hero" class="relative p-4 flex justify-center items-center h-64 md:space-x-8">
         <img src="~/assets/img/user.png" alt="user" class="w-64 h-auto bg-gradient-to-r from-purple-600 to-blue-600 shadow-xl rounded-full absolute -left-24 md:relative md:left-0">
         <div class="z-10 absolute right-3 md:relative md:right-0">
@@ -20,11 +22,11 @@
 
         <p class="mb-16 text-sm text-center leading-relaxed max-w-md">Hello, I'm Ferdian. My current job as an IT web developer at <i><strong>Tira Satria Niaga</strong></i> company in Jakarta area. Information systems graduate student in 2020 with GPA of 3.6 of 4.0.<br>In my self, Honesty is the principle during work</p>
 
-        <div class="flex justify-center items-center space-x-2">
+        <div class="flex justify-center items-center space-x-2 text-gray-100">
           <button @click="scrollToId('educations')" class="py-2 px-4 rounded bg-gradient-to-r from-pink-600 to-indigo-600">Educations</button>
           <a href="https://www.linkedin.com/in/ahmadferdian/" target="_blank" class="py-2 px-4 rounded bg-blue-900 tracking-wider">Linkedin</a>
         </div>
-        <button @click="scrollToId('contact')" class="mt-2 py-2 px-4 rounded bg-gradient-to-r from-purple-600 to-pink-600">Let's Connected</button>
+        <button @click="scrollToId('contact')" class="mt-2 py-2 px-4 text-gray-100 rounded bg-gradient-to-r from-purple-600 to-pink-600">Let's Connected</button>
       </div>
 
       <!-- experiences & educations -->
@@ -35,7 +37,7 @@
             <DividerX class="mt-3 mb-8" />
           </div>
           <ul class="pl-4 border-l-2 border-purple-600 flex flex-col items-start space-y-5">
-            <li v-for="expr in experiences" :key="expr.id" class="py-3 px-6 relative bg-gradient-to-r from-purple-600 to-blue-500 inline-block rounded-lg">
+            <li v-for="expr in experiences" :key="expr.id" class="py-3 px-6 relative text-gray-100 bg-gradient-to-r from-purple-600 to-blue-500 inline-block rounded-lg">
               <div class="w-4 h-4 bg-purple-600 rounded-full absolute -left-6 top-10"></div>
               <h2 class="font-semibold antialiased">{{ expr.title }}</h2>
               <p class="text-sm">{{ expr.company }}</p>
@@ -49,7 +51,7 @@
             <DividerX class="mt-3 mb-8" />
           </div>
           <ul class="pl-4 border-l-2 border-purple-600 flex flex-col items-start space-y-5">
-            <li v-for="educ in educations" :key="educ.id" class="py-3 px-6 relative bg-gradient-to-r from-purple-600 to-blue-500 inline-block rounded-lg">
+            <li v-for="educ in educations" :key="educ.id" class="py-3 px-6 relative text-gray-100 bg-gradient-to-r from-purple-600 to-blue-500 inline-block rounded-lg">
               <div class="w-4 h-4 bg-purple-600 rounded-full absolute -left-6 top-10"></div>
               <h2 class="font-semibold antialiased">{{ educ.name }}</h2>
               <p class="text-sm">{{ educ.major }}</p>
@@ -61,7 +63,7 @@
 
       <!-- Tools -->
       <div id="tools" class="flex flex-col justify-center items-center px-5 py-10 bg-gradient-to-t md:bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 md:rounded-xl">
-        <h1 class="font-semibold antialiased text-lg">Tools</h1>
+        <h1 class="text-gray-100 font-semibold antialiased text-lg">Tools</h1>
         <DividerX class="mt-3 mb-5" />
         <ul class="w-full flex flex-wrap justify-center items-center">
           <li v-for="i in tools" :key="i.id" class="m-5">

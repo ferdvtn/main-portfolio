@@ -7,7 +7,8 @@ export default {
   head: {
     title: 'Ahmad Ferdian',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
+      class: 'dark'
     },
     meta: [
       { charset: 'utf-8' },
