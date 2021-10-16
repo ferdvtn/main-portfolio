@@ -89,4 +89,11 @@ export const tools = [
         id: 9,
         url: 'https://subversion.apache.org/'
     },
-]
+];
+
+export const projects = [
+    {
+        id: 1,
+        url: 'https://ferdian-tasklist.netlify.app/'
+    }
+];

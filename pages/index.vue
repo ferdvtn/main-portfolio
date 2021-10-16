@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-10 flex flex-col space-y-32">
+  <div class="md:container mx-auto py-10 flex flex-col space-y-32">
       <div id="hero" class="relative p-4 flex justify-center items-center h-64 md:space-x-8">
         <img src="~/assets/img/user.png" alt="user" class="w-64 h-auto bg-gradient-to-r from-purple-600 to-blue-600 shadow-xl rounded-full absolute -left-24 md:relative md:left-0">
         <div class="z-10 absolute right-3 md:relative md:right-0">
@@ -15,10 +15,10 @@
 
       <!-- aboutme -->
       <div id="aboutme" class="p-4 flex flex-col justify-start items-center">
-        <h1 class="font-semibold antialiased text-xl">About Me</h1>
+        <h1 class="font-semibold antialiased text-xl">About me</h1>
         <DividerX class="mt-3 mb-8" />
 
-        <p class="mb-16 text-sm text-center leading-relaxed max-w-md">Hello, I'm Ferdian. My current job as an IT web developer at <i><strong>Tira Satria Niaga</strong></i> company in Jakarta area. Information systems graduate student in 2020 with GPA of 3.6 of 4.0. In my self, Honesty is the principle during work</p>
+        <p class="mb-16 text-sm text-center leading-relaxed max-w-md">Hello, I'm Ferdian. My current job as an IT web developer at <i><strong>Tira Satria Niaga</strong></i> company in Jakarta area. Information systems graduate student in 2020 with GPA of 3.6 of 4.0.<br>In my self, Honesty is the principle during work</p>
 
         <div class="flex justify-center items-center space-x-2">
           <button @click="scrollToId('educations')" class="py-2 px-4 rounded bg-gradient-to-r from-pink-600 to-indigo-600">Educations</button>
@@ -75,8 +75,24 @@
         </ul>
       </div>
 
+      <!-- projects -->
+      <div id="projects" class="flex flex-col justify-start items-center md:items-start">
+        <h1 class="font-semibold antialiased text-lg">Personal projects</h1>
+        <DividerX class="mt-3 mb-8" />
+        <ul class="flex flex-col justify-start items-center w-full md:-m-3 space-y-5 md:flex-wrap md:flex-row md:space-y-0">
+          <li v-for="project in projects" :key="project.id" class="w-full md:w-1/3">
+            <div class="md:m-3 bg-gradient-to-r from-pink-600 to-purple-600 md:rounded-xl">
+              <img 
+                :src="require(`~/assets/img/projects/${project.id}.png`)" :alt="`${project.id}.png`"
+                class="w-full h-56 object-contain object-center"
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+
       <!-- contact -->
-      <div id="contact" class="p-5">
+      <div id="contact" class="px-5">
         <h1 class="font-semibold antialiased text-lg">Let's connected</h1>
         <DividerX class="mt-3 mb-5" />
         <ul class="flex flex-col space-y-2">
@@ -105,14 +121,15 @@
 </template>
 
 <script>
-import { experiences, educations, tools } from '~/assets/data.js';
+import { experiences, educations, tools, projects } from '~/assets/data.js';
 
 export default {
   data() {
     return {
       experiences: experiences,
       educations: educations,
-      tools: tools
+      tools: tools,
+      projects: projects
     }
   },
   methods: {
