@@ -83,11 +83,16 @@
         <DividerX class="mt-3 mb-8" />
         <ul class="flex flex-col justify-start items-center w-full md:-m-3 space-y-5 md:flex-wrap md:flex-row md:space-y-0">
           <li v-for="project in projects" :key="project.id" class="w-full md:w-1/3">
-            <div class="md:m-3 bg-gradient-to-r from-pink-600 to-purple-600 md:rounded-xl">
-              <img 
-                :src="require(`~/assets/img/projects/${project.id}.png`)" :alt="`${project.id}.png`"
-                class="w-full h-56 object-contain object-center"
-              >
+            <div class="relative group overflow-hidden md:m-3 transform bg-gradient-to-r from-pink-600 to-purple-600 md:rounded-xl">
+              <a :href="project.url" target="_blank" class="block">
+                <img 
+                  :src="require(`~/assets/img/projects/${project.id}.png`)" :alt="`${project.id}.png`"
+                  class="w-full h-56 object-contain object-center"
+                >
+              </a>
+              <h2 class="group-hover:text-blue-500 transition duration-100 text-xs py-1 px-3 text-center w-auto rounded-xl opacity-60 whitespace-nowrap absolute bottom-1 left-1 bg-gray-800 text-gray-100">
+              {{ project.url }}
+              </h2>
             </div>
           </li>
         </ul>
