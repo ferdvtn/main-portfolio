@@ -16,7 +16,7 @@
       <!-- aboutme -->
       <div id="aboutme" class="p-4 flex flex-col justify-start items-center">
         <h1 class="font-semibold antialiased text-xl">About Me</h1>
-        <DividerX w='10' h='1' class="mt-3 mb-8" />
+        <DividerX class="mt-3 mb-8" />
 
         <p class="mb-16 text-sm text-center leading-relaxed max-w-md">Hello, I'm Ferdian. My current job as an IT web developer at <i><strong>Tira Satria Niaga</strong></i> company in Jakarta area. Information systems graduate student in 2020 with GPA of 3.6 of 4.0. In my self, Honesty is the principle during work</p>
 
@@ -32,7 +32,7 @@
         <div id="experiences" class="w-full flex flex-col justify-start items-start md:items-center">
           <div class="w-full flex flex-col items-center">
             <h1 class="font-semibold antialiased text-xl text-center">Experiences</h1>
-            <DividerX h="1" w="10" class="mt-3 mb-8" />
+            <DividerX class="mt-3 mb-8" />
           </div>
           <ul class="pl-4 border-l-2 border-purple-600 flex flex-col items-start space-y-5">
             <li v-for="expr in experiences" :key="expr.id" class="py-3 px-6 relative bg-gradient-to-r from-purple-500 to-blue-500 inline-block rounded-lg">
@@ -46,7 +46,7 @@
         <div id="educations" class="w-full flex flex-col justify-start items-start md:items-center">
           <div class="w-full flex flex-col items-center">
             <h1 class="font-semibold antialiased text-xl text-center">Educations</h1>
-            <DividerX h="1" w="10" class="mt-3 mb-8" />
+            <DividerX class="mt-3 mb-8" />
           </div>
           <ul class="pl-4 border-l-2 border-purple-600 flex flex-col items-start space-y-5">
             <li v-for="educ in educations" :key="educ.id" class="py-3 px-6 relative bg-gradient-to-r from-purple-500 to-blue-500 inline-block rounded-lg">
@@ -62,7 +62,7 @@
       <!-- contact -->
       <div id="contact" class="p-5">
         <h1 class="font-semibold antialiased text-lg">Let's connected</h1>
-        <DividerX w="10" h="1" class="mt-3 mb-5" />
+        <DividerX class="mt-3 mb-5" />
         <ul class="flex flex-col space-y-2">
           <li class="flex items-center space-x-3">
             <div>
