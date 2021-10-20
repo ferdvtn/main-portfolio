@@ -95,5 +95,9 @@ export const projects = [
     {
         id: 1,
         url: 'https://ferdian-tasklist.netlify.app/'
+    },
+    {
+        id: 2,
+        url: 'https://irentalcars.netlify.app/'
     }
 ];
