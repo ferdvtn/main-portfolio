@@ -94,10 +94,19 @@ export const tools = [
 export const projects = [
     {
         id: 1,
-        url: 'https://ferdian-tasklist.netlify.app/'
+        url: 'https://ferdian-tasklist.netlify.app/',
+        openimage: false,
     },
     {
         id: 2,
-        url: 'https://irentalcars.netlify.app/'
-    }
+        url: 'https://irentalcars.netlify.app/',
+        openimage: false,
+        
+    },
+    {
+        id: 3,
+        url: 'Mobile apps',
+        openimage: true,
+
+    },
 ];

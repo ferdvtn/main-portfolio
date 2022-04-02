@@ -84,7 +84,7 @@
         <ul class="flex flex-col justify-start items-center w-full sm:-m-3 space-y-5 sm:flex-wrap sm:flex-row sm:space-y-0">
           <li v-for="project in projects" :key="project.id" class="w-full sm:w-1/2 md:w-1/3">
             <div class="relative group overflow-hidden sm:m-3 transform sm:rounded-xl bg-gradient-to-r from-pink-600 to-purple-600">
-              <a :href="project.url" target="_blank" class="block">
+              <a :href="project.openimage ? require(`~/assets/img/projects/${project.id}.png`) : project.url" target="_blank" class="block">
                 <img 
                   :src="require(`~/assets/img/projects/${project.id}.png`)" :alt="`${project.id}.png`"
                   class="w-full h-56 object-contain object-center"
