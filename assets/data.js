@@ -1,19 +1,19 @@
 export const experiences = [
     {
         id: 4,
-        title: 'Web Developer',
-        company: 'PT. Tira Satria Niaga',
-        date: 'Jun 2021 - Present'
+        title: 'IT Software Developer',
+        company: 'PT. Indocyber Global Technology',
+        date: 'Jun 2021 - May 2022'
     },
     {
         id: 3,
-        title: 'Senior - Application Developer',
+        title: 'Senior - IT Web Developer',
         company: 'PT. Bahtera Informatika',
         date: 'May 2021 - Jun 2021'
     },
     {
         id: 2,
-        title: 'Junior - Application Developer',
+        title: 'Junior - IT Web Developer',
         company: 'PT. Bahtera Informatika',
         date: 'Jan 2020 - Apr 2021'
     },
@@ -88,6 +88,14 @@ export const tools = [
     {
         id: 9,
         url: 'https://subversion.apache.org/'
+    },
+    {
+        id: 10,
+        url: 'https://dart.dev/'
+    },
+    {
+        id: 11,
+        url: 'https://flutter.dev/'
     },
 ];
 

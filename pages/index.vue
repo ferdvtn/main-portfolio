@@ -5,12 +5,12 @@
       <div id="hero" class="relative p-4 flex justify-center items-center h-64 sm:space-x-8">
         <img src="~/assets/img/user.png" alt="user" class="w-64 h-auto absolute -left-24 sm:relative sm:left-0 bg-gradient-to-r from-purple-600 to-blue-600 shadow-xl rounded-full">
         <div class="z-10 absolute right-3 sm:relative sm:right-0">
-          <h1 class="text-4xl font-bold antialiased">Ahmad Ferdian</h1>
-          <p data-aos="fade-right">Web Developer</p>
+          <h1 class="text-4xl font-bold antialiased">Ahmad Ferdian, S.Kom</h1>
+          <p data-aos="fade-right">IT Software Developer</p>
 
           <div class="mt-5 flex space-x-2 justify-start text-center">
-            <a href="/pdf/ahmad-ferdian-cv.pdf" target="_blank" class="py-2 px-4 bg-red-300 text-gray-700 font-semibold antialiased rounded transition-opacity duration-100 hover:opacity-80">Download CV</a>
-            <button @click="scrollToId('experiences')" class="py-2 px-4 bg-green-300 text-gray-700 font-semibold antialiased rounded transition-opacity duration-100 hover:opacity-80">Experiences</button>
+            <a href="/pdf/ahmad-ferdian-cv.pdf" target="_blank" class="py-2 px-4 bg-red-400 text-white font-semibold antialiased rounded transition-opacity duration-100 hover:opacity-80">Download CV</a>
+            <button @click="scrollToId('experiences')" class="py-2 px-4 bg-green-400 text-gray-700 font-semibold antialiased rounded transition-opacity duration-100 hover:opacity-80">Experiences</button>
           </div>
         </div>
       </div>
@@ -20,7 +20,7 @@
         <h1 class="font-semibold antialiased text-xl">About me</h1>
         <DividerX class="mt-3 mb-8" />
 
-        <p class="mb-16 text-sm text-center leading-relaxed max-w-md">Hello, I'm Ferdian. My current job as an IT web developer at <i><strong>Tira Satria Niaga</strong></i> company in Jakarta area. Information systems graduate student in 2020 with GPA of 3.6 of 4.0.<br>In my self, Honesty is the principle during work</p>
+        <p class="mb-16 text-sm text-center leading-relaxed max-w-md">Hello, I'm Ferdian. Lastly I'm working as an <i><strong>IT Software Developer</strong></i> at <i><strong>PT. Indocyber Global Technology</strong></i> company in Jakarta area. Information systems graduate student in 2020 with GPA of 3.6 of 4.0.<br>In my self, honesty is the principle during work</p>
 
         <div class="flex justify-center items-center space-x-2 text-gray-100">
           <button @click="scrollToId('educations')" class="py-2 px-4 rounded bg-gradient-to-r from-pink-600 to-indigo-600 transition-opacity duration-100 hover:opacity-80">Educations</button>
@@ -120,6 +120,12 @@
             </div>
             <a href="https://ahmadferdian.netlify.app" target="_blank">ahmadferdian.netlify.app</a>
           </li>
+          <li class="flex items-center space-x-3">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /> </svg>
+            </div>
+            <a href="https://www.linkedin.com/in/ahmadferdian/" target="_blank">linkedin : Ahmad Ferdian</a>
+          </li>
         </ul>
       </div>
 
@@ -136,7 +142,7 @@ export default {
       experiences: experiences,
       educations: educations,
       tools: tools,
-      projects: projects
+      projects: projects,
     }
   },
   methods: {
