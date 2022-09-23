@@ -1,19 +1,25 @@
 export const experiences = [
     {
+        id: 5,
+        title: 'Data Engineer',
+        company: 'Kompas Gramedia',
+        date: 'Aug 2022 - Now'
+    },
+    {
         id: 4,
-        title: 'IT Software Developer',
+        title: 'Software Developer',
         company: 'PT. Indocyber Global Technology',
         date: 'Jun 2021 - May 2022'
     },
     {
         id: 3,
-        title: 'Senior - IT Web Developer',
+        title: 'Senior - Web Developer',
         company: 'PT. Bahtera Informatika',
         date: 'May 2021 - Jun 2021'
     },
     {
         id: 2,
-        title: 'Junior - IT Web Developer',
+        title: 'Junior - Web Developer',
         company: 'PT. Bahtera Informatika',
         date: 'Jan 2020 - Apr 2021'
     },
@@ -96,6 +102,10 @@ export const tools = [
     {
         id: 11,
         url: 'https://flutter.dev/'
+    },
+    {
+        id: 12,
+        url: 'https://go.dev/'
     },
 ];
 
